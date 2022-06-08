@@ -1,0 +1,23 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY_V2}}
+          heroku_app_name: "mb-crypto"
+          heroku_email: "andresmafra@gmail.com"
+          delay: 60
+          rollbackonhealthcheckfailed: true
+        env:
+          NODE_ENV: prod
+          MB_MONGO_USER: ${{secrets.MB_USER}}
+          MB_MONGO_PASSWORD: ${{secrets.MB_PASSWORD}}
