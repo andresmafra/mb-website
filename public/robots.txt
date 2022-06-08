@@ -1,0 +1,13 @@
+Sitemap: https://vistoriei.com.br/sitemap.xml
+User-agent: *
+Allow: /
+Disallow: /breadcrumb
+Disallow: /minha-conta
+Disallow: /minha-conta/*
+Disallow: /unsubscribe
+Disallow: /vistorias/revisar
+Disallow: /vistorias/checklist-de-revisao-concluida
+Disallow: /contratos/assinatura
+Disallow: /checkout
+Disallow: /checkout/*
+Disallow: /rv

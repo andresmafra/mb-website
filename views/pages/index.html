@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Title -->
+  <title>MB</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="/assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="/assets/vendor/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="/assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="/assets/vendor/flexdatalist/jquery.flexdatalist.min.css">
+  <link rel="stylesheet" href="assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="/assets/css/theme.min.css">
+
+  <link rel="canonical" href="https://mb.com.br/" />
+  <meta name="description" content="Cripto.">
+</head>
+
+<body>
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <div class="container position-relative z-index-4 space-1 space-top-md-2 space-top-lg-2 space-bottom-lg-2">
+      <div class="row justify-content-lg-between ">
+        <div class="col-lg-6">
+          <h1 class="display-5 font-size-md-down-5 font-weight-medium mb-3">Preços do BitCoin nas principais corretoras
+          </h1>
+          <p class="lead">Robô automático de compra e venda entre corretoras crypto.</p>
+
+          <div class="justify-content-lg-between align-items-center row">
+            <div class="col-md-3"><img class="img-fluid" style="height: 100px!important;" src="../../assets/cookie.png"
+                alt="Image Description"></div>
+            <div class="col-md-6">
+              <div id="heroSliderNav" class="js-slick-carousel u-slick u-slick--transform-off"
+                data-autoplay-speed="6000" data-infinite="true" data-is-thumbs="true" data-is-thumbs-progress="true"
+                data-thumbs-progress-options='{
+                 "color": "#377dff",
+                 "width": 8
+               }' data-thumbs-progress-container=".js-slick-thumb-progress">
+                <div class="js-slide p-1">
+                  <a class="js-slick-thumb-progress position-relative d-block u-avatar border rounded-circle p-1"
+                    href="javascript:;">
+                    <img class="img-fluid rounded-circle" src="/assets/crypto.png" alt="Image Description">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="simular" class="col-lg-6 simulate-box">
+          <!-- Form -->
+          <form class="js-validate card shadow">
+            <div class="card-header bg-light text-center py-4 px-5 px-md-6">
+              <h2 class="h6 font-weight-semi-bold mb-0">Saiba quanto você ganha <span
+                  class="text-secondary font-size-1 font-weight-medium">com nosso robô</span>
+              </h2>
+            </div>
+
+            <div class="card-body p-4 p-md-4">
+              <div class="row">
+                <div class="col-sm-12 mb-2">
+                  <div class="border-bottom pb-4 mb-4">
+                    <label class="form-label mb-3">
+                      Valor investido na MB <small>em dólares</small>
+                      <span class="text-danger">*</span>
+                    </label>
+                    <!-- Range Slider -->
+                    <input class="js-range-slider" type="text" data-extra-classes="u-range-slider"
+                      data-foreground-target="#foregroundAreaChartDoubleResult" data-min="100" data-max="10000"
+                      data-from="1000" data-result-min="#invested">
+
+                    <div class="mt-3 col-sm-12 text-center">
+                      <span class="small">US$
+                        <span id="invested" class="h4 font-weight-semi-bold text-primary"></span>
+                        ,00
+                      </span>
+                      <br>
+                      <span class="invested-btc text-danger"></span> <span class="small">BTC</span>
+                    </div>
+                  </div>
+
+                  <div class="media align-items-center mt-3">
+                    <h4 class="text-secondary font-size-1 font-weight-normal mb-0 mr-3">Menor valor</h4>
+                    <div class="media-body text-right">
+                      <small>US$</small>
+                      <span class="font-weight-medium font-size-2 lower-price"></span>
+                    </div>
+                  </div>
+                  <div class="media align-items-center">
+                    <h4 class="text-secondary small font-weight-normal mb-0 mr-3">Corretora
+                      <span class="fas fa-info-circle text-dark" data-toggle="tooltip" data-placement="right"
+                        title=""></span>
+                    </h4>
+                    <div class="media-body text-right">
+                      <span class="font-weight-medium small lower-price-c text-primary"></span>
+                    </div>
+                  </div>
+                  <div class="media align-items-center border-top mt-3">
+                    <h4 class="text-secondary font-size-1 font-weight-normal mb-0 mr-3">Maior valor</h4>
+                    <div class="media-body text-right">
+                      <span class="font-weight-medium font-size-2 upper-price"></span>
+                    </div>
+                  </div>
+                  <div class="media align-items-center">
+                    <h4 class="text-secondary small font-weight-normal mb-0 mr-3">Corretora <span
+                        class="fas fa-info-circle text-dark" data-toggle="tooltip" data-placement="right"
+                        title=""></span>
+                    </h4>
+                    <div class="media-body text-right">
+                      <span class="font-weight-medium small upper-price-c text-primary"></span>
+                    </div>
+                  </div>
+                  <div class="media align-items-center mt-3 border-top">
+                    <h4 class="text-secondary font-size-1 font-weight-normal mb-0 mr-3">Você Ganha</h4>
+                    <div class="media-body text-right">
+                      <small>US$</small>
+                      <span class="font-weight-medium font-size-2 result-price text-success"></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </form>
+          <!-- End Form -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container space-bottom-2 justify-content-lg-between">
+      <div class="w-lg-80 result">
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- JS Global Compulsory -->
+  <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="/assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="/assets/vendor/typed.js/lib/typed.min.js"></script>
+  <script src="/assets/vendor/flexdatalist/jquery.flexdatalist.min.js"></script>
+  <script src="/assets/vendor/jquery.countdown.min.js"></script>
+  <script src="assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="/assets/js/hs.core.js"></script>
+  <script src="/assets/js/components/hs.header.js"></script>
+  <script src="/assets/js/components/hs.unfold.js"></script>
+  <script src="/assets/js/components/hs.focus-state.js"></script>
+  <script src="/assets/js/components/hs.validation.js"></script>
+  <script src="/assets/js/components/hs.fancybox.js"></script>
+  <script src="/assets/js/components/hs.slick-carousel.js"></script>
+  <script src="/assets/js/components/hs.show-animation.js"></script>
+  <script src="/assets/js/components/hs.countdown.js"></script>
+  <script src="assets/js/components/hs.range-slider.js"></script>
+  <script src="/assets/js/pages/index.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      load()
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of countdowns
+      var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+        yearsElSelector: '.js-cd-years',
+        daysElSelector: '.js-cd-days',
+        hoursElSelector: '.js-cd-hours',
+        minutesElSelector: '.js-cd-minutes',
+        secondsElSelector: '.js-cd-seconds'
+      });
+
+      $.HSCore.components.HSRangeSlider.init('.js-range-slider');
+
+    });
+  </script>
+</body>
+
+</html>

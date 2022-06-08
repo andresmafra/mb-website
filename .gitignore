@@ -1,0 +1,30 @@
+# Logs
+logs
+*.log
+
+#Vi files
+*.swp
+*.swo
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Folders and files
+node_modules
+target
+npm-debug.log*
+nohup.out
+newrelic_agent.log
+.settings/
+.DS_Store
+.classpath
+.project
+.idea
+.vscode
+.history
+.fuse*
+*.iml
+*.vscode
+*.history
